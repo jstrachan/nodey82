@@ -1,0 +1,36 @@
+Step: build-step-credential-initializer-782xm:
+
+{"level":"warn","ts":1555405034.2098832,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/backport-container-name-fix\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1555405034.2115283,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-git-source-cb-kubecd-environment-jstrachan-qng5z:
+
+{"level":"warn","ts":1555405035.167782,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/backport-container-name-fix\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1555405035.8530078,"logger":"fallback-logger","caller":"git-init/main.go:99","msg":"Successfully cloned \"https://github.com/cb-kubecd/environment-jstrachan-t1-staging\" @ \"1ef773275127cd1c620314f89e73ab464cea2aa1\" in path \"/workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-04-16T08:57:18Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:8522a896d99c3de79ff545a0a8aa2fac3f971061,2:1ef773275127cd1c620314f89e73ab464cea2aa1
+ran git fetch origin 1ef773275127cd1c620314f89e73ab464cea2aa1: 8522a896d99c3de79ff545a0a8aa2fac3f971061: in 
+Unshallowed git repo in 
+ran git checkout master in 
+ran git reset --hard 8522a896d99c3de79ff545a0a8aa2fac3f971061 in 
+ran clean --force -d . in 
+ran git merge 1ef773275127cd1c620314f89e73ab464cea2aa1 in 
+Step: build-step-build-helm-build:
+
+{"level":"warning","msg":"No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080\n","time":"2019-04-16T08:57:23Z"}
+{"level":"info","msg":"Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io\n","time":"2019-04-16T08:57:24Z"}
+{"level":"info","msg":"Successfully added Helm repository chartmuseum.jenkins-x.io.\n","time":"2019-04-16T08:57:25Z"}
+{"level":"info","msg":"Adding missing Helm repo: jenkins-x-chartmuseum:8080 http://jenkins-x-chartmuseum:8080\n","time":"2019-04-16T08:57:25Z"}
+{"level":"info","msg":"Successfully added Helm repository jenkins-x-chartmuseum:8080.\n","time":"2019-04-16T08:57:25Z"}
+Step: build-step-source-mkdir-cb-kubecd-environment-jstrachan-r6bq7:
+
+{"level":"warn","ts":1555405061.383998,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1555405061.4221547,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /pvc/from-build-pack/workspace\""}
+Step: build-step-source-copy-cb-kubecd-environment-jstrachan-vnx8g:
+
+{"level":"warn","ts":1555405062.4205563,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1555405062.4360042,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"cp -r /workspace/source/. /pvc/from-build-pack/workspace\""}
